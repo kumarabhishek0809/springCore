@@ -10,7 +10,6 @@ public class AppTest {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
 		ctx.register(AppConfig.class);
 		ctx.refresh();
-		
 		AsyncManager task= ctx.getBean(AsyncManager.class);
 		task.doAsyncTask();
 	}

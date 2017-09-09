@@ -17,7 +17,7 @@ public class AsyncManager {
 			if(!org.springframework.util.CollectionUtils.isEmpty(violation)){
 				violation.entrySet().forEach( violationEntry -> {System.out.println(violationEntry.getKey() +"" +violationEntry.getValue());});
 			}
-			System.out.println("do some async task");
+			System.out.println("Non Async Exit ");
 		} catch (Exception e) {
 		}
 

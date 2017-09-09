@@ -31,6 +31,7 @@ public class AsyncService {
 			returnMap.put(estCode, violationDetails);
 			executor.execute((Runnable)new ViolationWorker(violationDetails));
 		}
+		System.out.println("Finally Async Exit");
 		return returnMap;		
 	}
 }
